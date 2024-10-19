@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    font-family: "Judson", serif;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(177, 96, 177);
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: #262626;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ margin: 0 auto;
+    position: relative;
+}
+
+.main .greeting{
+    position: absolute;
+    top: 0;
+    color: #E8E9EB;
+    font-size: 20px;
+}
+
+.main .exp-info{
+    color: #988C8C;
+}
+
+.main .exp-bar{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    background: #6B6565;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.443);
+    position: relative;
+}
+
+.main .exp-bar .filler{
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    background: #FFFB00;
+    box-shadow: 0 0 10px #FFFB00;
+    position: absolute;
+    left: 0;
+}
+
+.main .exp-status{
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .outer-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #676767;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.564);
+}
+
+.main .outer-circle .inner-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    background: #E8E9EB;
+    box-shadow: 0 0 10px #e8e9eb82;
+}
+
+.inner-circle img{
+    width: 100px;
+}
+
+.tokens-info h2{
+    font-size: 30px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.756);
+}
+
+#token-count{
+    text-shadow: 0 0 10px;
+    color: yellow;
+}
+
+.main .footer{
+    background: #746D69;
+    width: 100%;
+    height: 85px;
+
+    position: absolute;
+    bottom: 0;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.258);
+}
+
+#Button_score{
+
+}
