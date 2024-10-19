@@ -39,12 +39,12 @@ function fetchUserById(userId) {
 
 
 window.onload = async function() {
-    if (typeof Telegram !== "undefined" && Telegram.WebApp) {
+    if (typeof window.Telegram !== "undefined" && window.Telegram.WebApp) {
         // Инициализируем Telegram Web App
-        Telegram.WebApp.ready();
+        window.Telegram.WebApp.ready();
 
         // Получаем initData
-        const initData = Telegram.WebApp.initData;
+        const initData = window.Telegram.WebApp.initData;
         alert(JSON.stringify(initData)); // Логируем для проверки данных
         const params = new URLSearchParams(initData);
         const userEncoded = params.get('user');
